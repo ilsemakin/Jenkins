@@ -33,8 +33,8 @@ public class AggregatorTest {
         Aggregator agr = new Aggregator();
         double val = 1;
         agr.addValue(val);
-        assertThat(agr.getSum().isEqualTo(val));
+        assertThat(agr.getSum()).isEqualTo(val);
         agt.reset();
-        assertThat(agr.getSum().isEqualTo(0));
+        assertThat(agr.getSum()).isEqualTo(0);
     }
 }
